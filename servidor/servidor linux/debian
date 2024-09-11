@@ -1,0 +1,64 @@
+# Comandos básicos:
+
+    clear (limpar a tela)
+    shutdown -h now (deligar o servidor)
+    apt update (atualizar o repositório)
+    apt install vim (instalar o editor de textos)
+    pwd (verificar o diretório atual)
+    reboot (reiniciar o servidor)
+    exit (deslogar)
+
+____________________________________________
+# Personalização do servidor:
+1) apt install linuxlogo
+2) cd /etc  (etc diretório de configurações no Linux)
+3) ls issue* (issue é o arquivo de configuração de tela de login no Linux)
+4) Fazer um backup do issue (cp issue issue.bkp)
+5) Remover o arquivo issue (rm issue)
+6) Renomear o arquivo issue (cp issue.linuxlogo issue) 
+
+____________________________________________
+# Configuração da rede (cenário)
+    cd /etc/network
+    cp interfaces interfaces.old
+    vim interfaces
+
+# adicionar no fim do script
+#LAN
+allow hotplug enp0s8
+iface enp0s8 inet static
+address 192.168.0.1/24
+
+salvar e reiniciar o serviço de rede
+
+systemctl restart netwoking
+_________________________________________________
+# Intalação do dhcp 
+apt install isc-dhcp-server
+ip link show (verificar as interfaces de rede)
+
+1) configurar a interfaces LAN para DHCP
+cd /etc/default
+# fazer uma cópia do arquivo de configuração 
+cp isc-dhcp-server isc-dhcp-server.ord
+
+vim isc-dhcp-server
+INTERFACES="enp0s8" (linha 17) (verificar antes a interface )
+
+2) Configurar o script
+cd /etc/dhcp
+# fazer uma cópia do arquivo de configuração 
+cp dhcpd.conf dhcpd.conf.bkp
+
+vim dhcpd.conf
+
+# linha 7 para trocar o dominio
+option domain-name"localhost";
+
+# linha 8 para colocar o ip no lugar que esta escrito 
+opition domain-name-servers 192.168.0.1;
+
+# linhas 35,36,37.38 descomentando e substituindo a subnet
+subnet 192.168.0.0 netmask 255.255.255.0;
+range 192.168.0.100 192.168.0.200;
+option routers 192.168.0.1;
