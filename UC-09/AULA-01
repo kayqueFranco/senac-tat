@@ -1,1 +1,126 @@
-## Primeiro html 
+## HTML
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Explicações Estilos</title>
+
+</head>
+<body>
+   <h1>Hieraquia de títulos</h1>
+   <h1>Título 1</h1>
+   <h2>Título 2</h2>
+   <h3>Título 3</h3>
+   <h4>Título 4</h4>
+   <h5>Título 5</h5>
+   <h6>Título 6</h6>
+
+ <h1>história do Vídeo game </h1>
+ <h2>Playstation</h2>
+        <h3>Play 1</h3>
+        <h3>Play 2</h3>
+  <h2>Xbox</h2>
+        <h3>Xbox one</h3>
+        <h3>Xbox Série X</h3>
+  <h2>Nitendo</h2>
+
+  <hr>
+
+  <h1>Paragráfos e Quebras</h1>
+
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Dicta exercitationem, aspernatur optio illo consequuntur aliquid provident quidem aliquam laboriosam magni est mollitia saepe pariatur, veritatis, eum et rem. Neque, placeat.
+  </p>
+ <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>Magnam tempore at excepturi aut totam, voluptate, fugiat repudiandae a fugit sequi, atque eligendi nobis ea. Debitis porro nesciunt ratione. Ea, laboriosam.
+ </p>
+
+ Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Dicta exercitationem, aspernatur optio illo consequuntur aliquid provident quidem aliquam laboriosam magni est mollitia saepe pariatur, veritatis, eum et rem. Neque, placeat.
+<br><br>
+ Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Dicta exercitationem, aspernatur optio illo consequuntur aliquid provident quidem aliquam laboriosam magni est mollitia saepe pariatur, veritatis, eum et rem. Neque, placeat.
+
+ <hr>
+
+ <h1>Símbulos Especiais e Emojis</h1>
+<!--Comentário-->
+ &lt;<!--Menor-->
+&gt;<!--Maior-->
+&le;
+&ge;
+<br>
+&pound;
+&yen;
+&euro;
+&cent;
+
+<br>
+
+&copy;
+&reg;
+&trade;
+
+<br>
+
+&delta;
+&Delta;
+&sum;
+&infin;
+<p>Muitos símbulos....</p>
+<br>
+🤑🤑🤑<br>
+&#x1f33b;
+
+<hr>
+
+<h1>Formatações de textos</h1>
+<b>Este textos está em negrito.</b>
+<strong>Texto em negrito</strong>
+
+<br>
+
+<i>Itálico</i>
+<br>
+<em>ênfase</em>
+<br>
+
+<strong><em>Negrito Itálico</em></strong>
+
+<br>
+
+<mark>Marca Texto</mark><br>
+<mark style="background-color: brown;"> @__ofrancooo</mark>
+
+<br>
+
+Excluir um pedaço de texto <del>Texto excluido</del>
+<br>
+
+<u>Sublinhado</u>
+<ins>Sublinhado</ins>
+
+<br>
+H <sub>2</sub>O
+X <sup>2</sup>
+
+<hr>
+
+<h1>LINKS</h1>
+<a href="introducao.html">Olá Mundo</a><br>
+<a href="introducao.html" target="_blank">Olá Mundo</a>
+<br>
+<a href="introducao.html" target="_blank">
+    <img src="olamundo.jfif" alt="">
+</a>
+<br>
+
+<a href="https://pt.wikipedia.org/wiki/Internet#:~:text=A%20Internet%20%C3%A9%20um%20sistema,progressivamente%20usu%C3%A1rios%20no%20mundo%20inteiro." target="_blank">
+    Internet - externo
+
+</a>
+</body>
+</html>
+
